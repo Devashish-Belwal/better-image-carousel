@@ -1,74 +1,85 @@
-# ImageCarousel
+# Infinite Image Carousel (React + TypeScript)
 
-A lightweight, dependency-free React carousel component with infinite looping, pause-at-card animation, reverse playback, and support for animated stop-motion cards.
+A lightweight React image carousel with seamless infinite looping, support for vertical and horizontal scrolling, reverse playback, and animated stop-motion cards.
 
-> Built with React + TypeScript using the Web Animations API.
+The repository contains only **two `.tsx` files**:
 
----
+* `AnimatedSlot.tsx`
+* `ImageCarousel.tsx`
 
-## Preview
-
-### Vertical carousel
-
-> Replace with your GIF
-
-![Vertical Carousel](./assets/gifs/vertical.gif)
-
-### Horizontal carousel
-
-> Replace with your GIF
-
-![Horizontal Carousel](./assets/gifs/horizontal.gif)
-
-### Reverse direction
-
-> Replace with your GIF
-
-![Reverse Carousel](./assets/gifs/reverse.gif)
-
-### Animated stop-motion cards
-
-> Replace with your GIF
-
-![Animated Cards](./assets/gifs/animated-cards.gif)
+Simply copy both files into your project and start using the component—no package installation or animation library required.
 
 ---
 
-## Features
+# Preview
 
-* Infinite seamless looping
-* Vertical or horizontal scrolling
+## Vertical
+
+> Replace this with your GIF
+
+![Vertical Demo](./gifs/vertical.gif)
+
+## Horizontal
+
+> Replace this with your GIF
+
+![Horizontal Demo](./gifs/horizontal.gif)
+
+## Reverse Direction
+
+> Replace this with your GIF
+
+![Reverse Demo](./gifs/reverse.gif)
+
+## Animated Stop-Motion Cards
+
+> Replace this with your GIF
+
+![Animated Demo](./gifs/animated.gif)
+
+---
+
+# Features
+
+* Seamless infinite looping
+* Vertical and horizontal scrolling
 * Reverse playback
 * Pause at every card
 * Hover to pause
 * Static and animated image support
-* Fully configurable card size, gap, timing, and border radius
-* No external animation libraries
+* Configurable card size, gap, timing, and border radius
+* Written in plain React + TypeScript
 
 ---
 
-## Installation
+# Installation
 
-```bash
-bun add your-package-name
-# or
-npm install your-package-name
+Copy these two files into your project:
+
+```text
+components/
+├── AnimatedSlot.tsx
+└── ImageCarousel.tsx
+```
+
+Then import the carousel wherever you need it.
+
+```tsx
+import ImageCarousel from "./components/ImageCarousel";
 ```
 
 ---
 
-## Basic Usage
+# Basic Usage
 
 ```tsx
-import ImageCarousel from "./ImageCarousel";
-
 const images = [
   "/cards/1.webp",
   "/cards/2.webp",
   "/cards/3.webp",
 ];
 
-export default function App() {
+export default function Example() {
   return (
     <div style={{ width: 360, height: 600 }}>
       <ImageCarousel
@@ -82,9 +93,9 @@ export default function App() {
 
 ---
 
-## Animated Cards
+# Animated Cards
 
-Each item can either be a single image or an array of images.
+Each item can either be a single image or an array of frames.
 
 ```tsx
 const images = [
@@ -102,11 +113,11 @@ const images = [
 ];
 ```
 
-The frame animation is synchronized across every animated card.
+The carousel automatically plays every animated card in sync.
 
 ---
 
-## Horizontal Carousel
+# Horizontal Carousel
 
 ```tsx
 <ImageCarousel
@@ -119,7 +130,7 @@ The frame animation is synchronized across every animated card.
 
 ---
 
-## Reverse Playback
+# Reverse Playback
 
 ```tsx
 <ImageCarousel
@@ -131,18 +142,18 @@ The frame animation is synchronized across every animated card.
 
 ---
 
-## Props
+# Props
 
 | Prop            | Type                         | Default                   | Description                       |
 | --------------- | ---------------------------- | ------------------------- | --------------------------------- |
 | `images`        | `ImageSource[]`              | —                         | Array of images or frame arrays   |
 | `direction`     | `"vertical" \| "horizontal"` | `"vertical"`              | Scroll direction                  |
 | `reverse`       | `boolean`                    | `false`                   | Reverse loop direction            |
-| `loopDuration`  | `number`                     | `20000`                   | Total loop duration (ms)          |
+| `loopDuration`  | `number`                     | `20000`                   | Time for one complete loop (ms)   |
 | `pauseDuration` | `number`                     | `0`                       | Pause at each card (ms)           |
 | `frameInterval` | `number`                     | `120`                     | Frame interval for animated cards |
-| `pauseOnHover`  | `boolean`                    | `true`                    | Pause animation on hover          |
-| `gap`           | `number`                     | `24`                      | Gap between cards                 |
+| `pauseOnHover`  | `boolean`                    | `true`                    | Pause on mouse hover              |
+| `gap`           | `number`                     | `24`                      | Space between cards               |
 | `borderRadius`  | `number`                     | `24`                      | Card border radius                |
 | `cardWidth`     | `string`                     | `clamp(18rem,32vw,26rem)` | Width of each card                |
 | `cardHeight`    | `string`                     | `clamp(23rem,42vw,34rem)` | Height of each card               |
@@ -150,39 +161,19 @@ The frame animation is synchronized across every animated card.
 
 ---
 
-## Component API
-
-```tsx
-<ImageCarousel
-  images={images}
-  direction="horizontal"
-  reverse={false}
-  loopDuration={20000}
-  pauseDuration={1000}
-  frameInterval={120}
-  pauseOnHover
-  gap={24}
-  borderRadius={24}
-  cardWidth="20rem"
-  cardHeight="28rem"
-/>
-```
-
----
-
-## ImageSource Type
+# ImageSource
 
 ```ts
 type ImageSource = string | string[];
 ```
 
-| Value                          | Result                    |
-| ------------------------------ | ------------------------- |
-| `"/card.webp"`                 | Static image              |
-| `["1.webp","2.webp","3.webp"]` | Animated stop-motion card |
+| Value                            | Result                    |
+| -------------------------------- | ------------------------- |
+| `"/card.webp"`                   | Static image              |
+| `["1.webp", "2.webp", "3.webp"]` | Animated stop-motion card |
 
 ---
 
-## License
+# License
 
 MIT
