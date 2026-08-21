@@ -183,16 +183,6 @@ type ImageSource = string | string[];
 
 ---
 
-## Roadmap
-
-* [ ] Drag / swipe support
-* [ ] Variable card sizing
-* [ ] Auto-fit layouts
-* [ ] Programmatic controls (play, pause, seek)
-* [ ] Vertical + horizontal wheel navigation
-
----
-
 ## License
 
 MIT
