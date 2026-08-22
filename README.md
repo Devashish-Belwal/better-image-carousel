@@ -15,27 +15,19 @@ Simply copy both files into your project and start using the component—no pack
 
 ## Vertical
 
-> Replace this with your GIF
-
-![Vertical Demo](./gifs/vertical.gif)
+![Vertical Demo](./public/gifs/vertical-demo.gif)
 
 ## Horizontal
 
-> Replace this with your GIF
-
-![Horizontal Demo](./gifs/horizontal.gif)
+![Horizontal Demo](./public/gifs/horizontal-demo.gif)
 
 ## Reverse Direction
 
-> Replace this with your GIF
-
-![Reverse Demo](./gifs/reverse.gif)
+![Reverse Demo](./public/gifs/reverse-demo.gif)
 
 ## Animated Stop-Motion Cards
 
-> Replace this with your GIF
-
-![Animated Demo](./gifs/animated.gif)
+![Animated Demo](./public/gifs/animated-demo.gif)
 
 ---
 
