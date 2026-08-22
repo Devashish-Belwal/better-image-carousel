@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AnimatedSlot, { type ImageSource } from "./AnimatedSlot";
 
 type ScrollDirection = "vertical" | "horizontal";
@@ -48,8 +48,6 @@ export default function ImageCarousel({
   const [isLandscape, setIsLandscape] = useState(true);
   const [frames, setFrames] = useState(() => images.map(() => 0));
   const [stepSize, setStepSize] = useState(0);
-
-  // const initialOffset = reverse ? -images.length * stepSize : 0;
 
   const stepDuration =
     images.length === 0
@@ -127,7 +125,6 @@ export default function ImageCarousel({
     if (!trackRef.current || stepSize === 0 || images.length === 0) return;
 
     const trackEl = trackRef.current;
-    // const distance = images.length * stepSize;
 
     const totalPause = images.length * pauseDuration;
     const moveTime = Math.max(1, loopDuration - totalPause);
@@ -147,7 +144,6 @@ export default function ImageCarousel({
           loopDuration;
 
       const start = reverse ? -images.length * stepSize : 0;
-      const end = reverse ? 0 : -images.length * stepSize;
 
       const translate = reverse
         ? start + position
