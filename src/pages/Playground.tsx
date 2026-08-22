@@ -2,35 +2,160 @@ import ImageCarousel from "@/components/customs/ImageCarousel";
 
 const images = [
   [
-    "/cards/koy-sun-01.webp",
-    "/cards/koy-sun-02.webp",
-    "/cards/koy-sun-03.webp",
+    "/cards/koy-sun/koy-sun-01.webp",
+    "/cards/koy-sun/koy-sun-02.webp",
+    "/cards/koy-sun/koy-sun-03.webp",
+    "/cards/koy-sun/koy-sun-04.webp",
+    "/cards/koy-sun/koy-sun-05.webp",
+    "/cards/koy-sun/koy-sun-06.webp",
+    "/cards/koy-sun/koy-sun-07.webp",
+    "/cards/koy-sun/koy-sun-08.webp",
+    "/cards/koy-sun/koy-sun-09.webp",
+    "/cards/koy-sun/koy-sun-10.webp",
+    "/cards/koy-sun/koy-sun-11.webp",
+    "/cards/koy-sun/koy-sun-10.webp",
+    "/cards/koy-sun/koy-sun-09.webp",
+    "/cards/koy-sun/koy-sun-08.webp",
+    "/cards/koy-sun/koy-sun-07.webp",
+    "/cards/koy-sun/koy-sun-06.webp",
+    "/cards/koy-sun/koy-sun-05.webp",
+    "/cards/koy-sun/koy-sun-04.webp",
+    "/cards/koy-sun/koy-sun-03.webp",
+    "/cards/koy-sun/koy-sun-02.webp",
+    "/cards/koy-sun/koy-sun-01.webp",
   ],
-  "/cards/koy-sun-04.webp",
-  "/cards/koy-sun-05.webp",
-  "/cards/koy-sun-06.webp",
-  // "/cards/koy-sun-07.webp",
   [
-    "/cards/koy-sun-01.webp",
-    "/cards/koy-sun-02.webp",
-    "/cards/koy-sun-03.webp",
+    "/cards/shaep/shaep-01.webp",
+    "/cards/shaep/shaep-02.webp",
+    "/cards/shaep/shaep-03.webp",
+    "/cards/shaep/shaep-04.webp",
+    "/cards/shaep/shaep-05.webp",
+    "/cards/shaep/shaep-06.webp",
+    "/cards/shaep/shaep-07.webp",
+    "/cards/shaep/shaep-06.webp",
+    "/cards/shaep/shaep-05.webp",
+    "/cards/shaep/shaep-04.webp",
+    "/cards/shaep/shaep-03.webp",
+    "/cards/shaep/shaep-02.webp",
+    "/cards/shaep/shaep-01.webp",
+  ],
+  [
+    "/cards/zay-dante/zay-dante-01.webp",
+    "/cards/zay-dante/zay-dante-02.webp",
+    "/cards/zay-dante/zay-dante-03.webp",
+    "/cards/zay-dante/zay-dante-04.webp",
+    "/cards/zay-dante/zay-dante-05.webp",
+    "/cards/zay-dante/zay-dante-06.webp",
+    "/cards/zay-dante/zay-dante-07.webp",
+    "/cards/zay-dante/zay-dante-08.webp",
+    "/cards/zay-dante/zay-dante-09.webp",
+    "/cards/zay-dante/zay-dante-10.webp",
+    "/cards/zay-dante/zay-dante-09.webp",
+    "/cards/zay-dante/zay-dante-08.webp",
+    "/cards/zay-dante/zay-dante-07.webp",
+    "/cards/zay-dante/zay-dante-06.webp",
+    "/cards/zay-dante/zay-dante-05.webp",
+    "/cards/zay-dante/zay-dante-04.webp",
+    "/cards/zay-dante/zay-dante-03.webp",
+    "/cards/zay-dante/zay-dante-02.webp",
+    "/cards/zay-dante/zay-dante-01.webp",
+  ],
+  [
+    "/cards/pistakio/pistakio-01.webp",
+    "/cards/pistakio/pistakio-02.webp",
+    "/cards/pistakio/pistakio-03.webp",
+    "/cards/pistakio/pistakio-04.webp",
+    "/cards/pistakio/pistakio-05.webp",
+    "/cards/pistakio/pistakio-06.webp",
+    "/cards/pistakio/pistakio-07.webp",
+    "/cards/pistakio/pistakio-08.webp",
+    "/cards/pistakio/pistakio-09.webp",
+    "/cards/pistakio/pistakio-10.webp",
+    "/cards/pistakio/pistakio-11.webp",
+    "/cards/pistakio/pistakio-10.webp",
+    "/cards/pistakio/pistakio-09.webp",
+    "/cards/pistakio/pistakio-08.webp",
+    "/cards/pistakio/pistakio-07.webp",
+    "/cards/pistakio/pistakio-06.webp",
+    "/cards/pistakio/pistakio-05.webp",
+    "/cards/pistakio/pistakio-04.webp",
+    "/cards/pistakio/pistakio-03.webp",
+    "/cards/pistakio/pistakio-02.webp",
+    "/cards/pistakio/pistakio-01.webp",
+  ],
+  [
+    "/cards/perfect-person/perfect-person-01.webp",
+    "/cards/perfect-person/perfect-person-02.webp",
+    "/cards/perfect-person/perfect-person-03.webp",
+    "/cards/perfect-person/perfect-person-04.webp",
+    "/cards/perfect-person/perfect-person-05.webp",
+    "/cards/perfect-person/perfect-person-06.webp",
+    "/cards/perfect-person/perfect-person-07.webp",
+    "/cards/perfect-person/perfect-person-08.webp",
+    "/cards/perfect-person/perfect-person-09.webp",
+    "/cards/perfect-person/perfect-person-10.webp",
+    "/cards/perfect-person/perfect-person-09.webp",
+    "/cards/perfect-person/perfect-person-08.webp",
+    "/cards/perfect-person/perfect-person-07.webp",
+    "/cards/perfect-person/perfect-person-06.webp",
+    "/cards/perfect-person/perfect-person-05.webp",
+    "/cards/perfect-person/perfect-person-04.webp",
+    "/cards/perfect-person/perfect-person-03.webp",
+    "/cards/perfect-person/perfect-person-02.webp",
+    "/cards/perfect-person/perfect-person-01.webp",
   ]
 ];
 
 export default function Playground() {
   return (
-    <div className="fixed inset-0 overflow-y-auto bg-slate-900 p-8">
-      <div className="border border-black w-[100vw] h-[80vh] rounded-3xl p-[0vh]">
+    <div className="overflow-y-auto h-screen bg-slate-900 flex gap-4 justify-center items-center p-12">
+      <div className=" h-[30rem] w-[22rem] overflow-hidden flex justify-center items-center rounded-3xl">
+        <ImageCarousel
+          images={images}
+          direction="horizontal"
+          cardWidth="22rem"
+          cardHeight="30rem"
+          pauseDuration={1000}
+          loopDuration={10000}
+          gap={16}
+        />
+      </div>
+      {/* <div className=" h-[30rem] w-[22rem] overflow-hidden flex justify-center items-center rounded-3xl">
+        <ImageCarousel
+          images={images}
+          direction="horizontal"
+          cardWidth="22rem"
+          cardHeight="30rem"
+          pauseDuration={1000}
+          loopDuration={10000}
+          gap={16}
+          reverse
+        />
+      </div>
+      <div className=" h-[30rem] w-[22rem] overflow-hidden flex justify-center items-center rounded-3xl">
         <ImageCarousel
           images={images}
           direction="vertical"
           cardWidth="22rem"
           cardHeight="30rem"
-          pauseDuration={2000}
-          loopDuration={20000}
+          pauseDuration={1000}
+          loopDuration={10000}
+          gap={16}
         />
       </div>
-      <div className="border border-black w-[100vh] h-[100vw] rounded-3xl p-[5vh]">
+      <div className=" h-[30rem] w-[22rem] overflow-hidden flex justify-center items-center rounded-3xl">
+        <ImageCarousel
+          images={images}
+          direction="vertical"
+          cardWidth="22rem"
+          cardHeight="30rem"
+          pauseDuration={1000}
+          loopDuration={10000}
+          gap={16}
+          reverse
+        />
+      </div> */}
+      {/* <div className="border border-blue-500 w-[100vh] h-[100vw] rounded-3xl p-[5vh]">
         <ImageCarousel
           images={images}
           direction="horizontal"
@@ -41,7 +166,7 @@ export default function Playground() {
           loopDuration={20000}
           frameInterval={100}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
